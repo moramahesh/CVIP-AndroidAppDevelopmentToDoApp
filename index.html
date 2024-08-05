@@ -1,32 +1,18 @@
-<!DOCTYPE html>
+      <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>To-Do</title>
-    <link rel="stylesheet" href="style.css" />
-    <script src="script.js" defer></script>
-  </head>
-  <body>
-    <h1>To-Do's</h1>
-    <form id="form">
-      <input
-        style="margin-top: -5%"
-        type="text"
-        id="input"
-        class="input"
-        placeholder="What you gotta do?"
-        autocomplete="off"
-      />
-      <ul class="todos" id="todos"></ul>
-    </form>
-    <small>
-      <b>Instructions</b> <br />
-      <b>On a Computer:</b><br>
-      Left click to toggle complete. <br />Right click to delete the todo.
-      <br><br>
-      <b>On a Mobile:</b><br>
-      Click to toggle complete. <br />Press and hold to delete the todo.
-    </small>
-  </body>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>what do you want to do</h1>
+        <input type="text" id="newTodoInput" placeholder="Add a new to-do">
+        <button onclick="addTodo()">submit</button>
+        <ul id="todoList"></ul>
+    </div>
+    <script src="script.js"></script>
+</body>
 </html>
